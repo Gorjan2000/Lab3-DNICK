@@ -52,7 +52,7 @@
 <div id="cards">
 	{% for blog in blogs %}
 		<div class="card">
-  		<img src="{{MEDIA_URL}}{{blog.fajlovi}}" class="card-img-top" alt="...">
+  		<img src="{{MEDIA_URL}}{{blog.fajlovi.url}}" class="card-img-top" alt="...">
   		<div class="card-body">
     		<h5 class="card-title">{{blog.naslov}}</h5>
     		<p class="card-text">{{blog.sodrzhina}}</p>
