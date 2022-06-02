@@ -13,7 +13,7 @@ class Blog(models.Model):
     naslov = models.CharField(max_length=30)
     avtor = models.ForeignKey(BlogUser, on_delete=models.CASCADE, null=True, blank=True)
     sodrzhina = models.CharField(max_length=50)
-    fajlovi = models.FileField()
+    fajlovi = models.FileField(upload_to="cover_images/", null=True, blank=True)
     datumKreiranje = models.DateField()
     datumIzmena = models.DateField()
 
